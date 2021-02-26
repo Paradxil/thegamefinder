@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Game Finder | Affordable Gaming Deals</title>
+        <link rel="stylesheet" href="./styles/style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body id="main-container">
+        <div class="main-container">
+            <div class="theme-changer">
+                <label id="theme-label" class="theme-label" for="theme-checkbox">Light Mode</label>
+                <input id="theme-checkbox" type="checkbox" onclick="changeTheme()" />
+            </div>
+            <div class="section header">
+                <h1 class="page-title">
+                    The Game Finder
+                </h1>
+                <h2 class="page-subtitle">
+                    Find the best game deals available.
+                </h2>
+            </div>
+            <div class="section search">
+                <div class="search-box">
+                    <input id="search-input" type="text" placeholder="find a game..."/>
+                    <div id="search-button" onclick="searchForGame()">Find Deals</div>
+                </div>
+            </div>
+            <div class="section search-results">
+                <div id="close-results" class="button" onclick="hideSearchResults()">Close Search</div>
+                <div id="search-games-list" class="game-list">
+                </div>
+            </div>
+            <div class="section game-deals">
+                <div class="section-title">
+                    Current Deals
+                </div>
+                <div id="loading-games" class="loading-games"></div>
+                <div id="deals-list" class="game-list">
+                </div>
+            </div>
+        </div>
+        <div id="single-game-overlay">
+            <div id="close-overlay" class="button" onclick="hideOverlay()">Close</div>
+            <div id="single-game-deals">
+
+            </div>
+        </div>
+        <script src="./scripts/gamedeals.js"></script>
+    </body>
+</html>
