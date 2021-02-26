@@ -177,6 +177,20 @@ h1 {
     align-items: center;
 }
 
+.footer {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--game-background-color);
+}
+
+.footer a {
+    color: var(--button-hover-background-color);
+}
+
+.footer p {
+    padding: 5px;
+}
+
 .search {
     position: sticky;
     top: 0px;
